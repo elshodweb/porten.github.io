@@ -1,0 +1,83 @@
+@mixin line {
+   &::after {
+      content: "";
+      margin: 0 auto;
+      margin-top: 50px;
+      display: block;
+      width: 120px;
+      height: 0px;
+      border: 1px solid #ffffff;
+   }
+}
+
+@mixin disflex {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin mintitle {
+   font-family: "Playfair Display";
+   font-size: 36px;
+   line-height: 42px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #ffffff;
+   font-weight: 700;
+}
+
+@mixin cardstyle {
+   &__name {
+      margin-top: 25px;
+      font-family: "Playfair Display";
+      font-weight: 700;
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: uppercase;
+   }
+
+   &__sena {
+      margin-top: 10px;
+      font-family: "Playfair Display";
+      font-weight: 700;
+      font-size: 16px;
+      color: #ffffff;
+   }
+
+   &__img {
+      background: #191b1c;
+      width: 260px;
+      height: 325px;
+      @include disflex;
+      margin-right: 50px;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}
+
+@mixin btnstyle {
+   @include disflex;
+   flex-direction: row;
+   padding: 12px 28px;
+   width: 138px;
+   height: 47px;
+   border: 1px solid #ffffff;
+   box-sizing: border-box;
+   font-size: 18px;
+   text-align: center;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   color: #ffffff;
+   margin-top: 42px;
+   &:hover{
+      background:#ffffff50;
+   }
+}
+
+@mixin textstyle {
+   font-size: 14px;
+   line-height: 150%;
+   text-align: center;
+   color: #ffffff;
+}

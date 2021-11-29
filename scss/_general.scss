@@ -1,0 +1,236 @@
+.info {
+   height: 44px;
+   background: #000000;
+   padding: 14px 0;
+   &__row {
+      @include disflex;
+      justify-content: space-between;
+   }
+
+   &__column {
+      font-size: 12px;
+      color: #969696;
+   }
+   &__tel {
+      position: relative;
+      padding-left: 20px;
+      &::before {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 0;
+         top: 50%;
+         transform: translateY(-50%);
+         width: 16px;
+         height: 16px;
+         background: url("../icons/tel.svg") 0 0 no-repeat;
+      }
+   }
+}
+
+.subheader {
+   @include disflex;
+   background: #0f0f0f;
+   height: 80px;
+}
+.rowsub {
+   @include disflex;
+   justify-content: space-between;
+   height: 80px;
+}
+.logo {
+   &__img {
+      display: block;
+   }
+}
+.menu {
+   @include disflex;
+   justify-content: space-between;
+   position: relative;
+   height: 80px;
+   &__row {
+      width: 440px;
+      @include disflex;
+      justify-content: space-around;
+      height: 80px;
+   }
+
+   &__colmn {
+      @include disflex;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #969696;
+      padding: 15px 20px;
+      height: 80px;
+      &:hover {
+         background: #1f1f1f;
+         color: #ffffff;
+      }
+   }
+
+   &__icon {
+      @include disflex;
+      justify-content: space-between;
+      width: 80px;
+   }
+
+   &__basket {
+      width: 22px;
+      height: 22px;
+      padding: 5px;
+      background: url("../icons/buy.svg") center center/cover no-repeat;
+      &:hover {
+         background: #1f1f1f url("../icons/buy.svg") center center/cover no-repeat;
+      }
+   }
+
+   &__seach {
+      width: 22px;
+      height: 22px;
+      padding: 5px;
+      background: url("../icons/seach.svg") center center/cover no-repeat;
+   }
+}
+
+.hi {
+   min-height: 810px;
+   background: url("../img/hifon.png") center center/cover no-repeat;
+   &__logo {
+      margin-top: 150px;
+   }
+   .row {
+      @include disflex;
+   }
+   &__text {
+      margin-top: 80px;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+   }
+}
+.biglogo {
+   display: block;
+   margin: 0 auto;
+}
+
+.colection {
+   width: 100%;
+   &__row {
+      widows: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+      background: black;
+   }
+
+   &__col {
+      &:nth-child(1) {
+         background: #000000;
+         width: 1040px;
+         height: 730px;
+      }
+      &:nth-child(2) {
+         background: url("../img/boy.png") center center/cover no-repeat;
+width: 880px;
+height: 730px;
+      }
+      &:nth-child(3) {
+         background: url("../img/smoking.png") center center/cover no-repeat;
+         width: 880px;
+         height: 730px;
+      }
+      &:nth-child(4) {
+         background: #000000;
+         width: 1040px;
+         height: 730px;
+      }
+      
+   }
+}
+
+.col1 {
+   &__row {
+      @include disflex;
+      flex-direction: column;
+      margin: 0 80px;
+   }
+
+   &__title {
+      margin-top: 93px;
+      @include mintitle;
+      @include line;
+   }
+
+   &__icons {
+      @include disflex;
+      justify-content: space-between;
+      margin-top: 50px;
+   }
+}
+
+.cart {
+   @include cardstyle;
+}
+
+.col2 {
+   @include disflex;
+   flex-direction: column;
+   &__title {
+      @include mintitle;
+      margin-top: 484px;
+      @include line;
+   }
+
+   &__btn {
+      @include btnstyle;
+   }
+}
+
+.col4 {
+   &__row {
+      @include disflex;
+      flex-direction: column;
+   }
+
+   &__title {
+      @include mintitle;
+      margin-top: 100px;
+   }
+
+   &__text {
+      @include textstyle;
+      width: 471px;
+      margin-top: 40px;
+   }
+
+   &__btn {
+      @include btnstyle;
+      width: 320px;
+      margin-top: 61px;
+   }
+}
+
+.new {
+   min-height: 1289px;
+   background: #000000;
+   &__title {
+      @include mintitle;
+      @include line;
+      margin-top: 120px;
+   }
+
+   &__cart {
+      @include disflex;
+      flex-wrap: wrap;
+      margin-top: 81px;
+   }
+}
+.cart {
+   @include cardstyle;
+   margin-bottom: 40px;
+}
+
+
